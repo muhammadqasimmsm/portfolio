@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Qasim Shahzad | Head, Application Support Unit</title>
+    <meta name="description" content="Professional Officer with over 12 years of extensive diversified work experience in IT application support, project management, and operational roles.">
+    <meta name="keywords" content="IT support, application support, project management, IT services, team leadership, problem solving, banking applications">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#10b981',
+                        dark: '#1e293b',
+                        darker: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .skill-bar {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #e2e8f0;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            border-radius: 5px;
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            transition: width 1s ease-in-out;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-dark">
+                    <span class="gradient-text">Muhammad Qasim Shahzad</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link py-4">Home</a>
+                    <a href="#about" class="nav-link py-4">Summary</a>
+                    <a href="#experience" class="nav-link py-4">Experience</a>
+                    <a href="#education" class="nav-link py-4">Education</a>
+                    <a href="#skills" class="nav-link py-4">Skills</a>
+                    <a href="#contact" class="nav-link py-4">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="px-2 pt-2 pb-4 space-y-1">
+                    <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">Home</a>
+                    <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">Summary</a>
+                    <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">Experience</a>
+                    <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">Education</a>
+                    <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">Skills</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-blue-50 to-green-50">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                    <span class="gradient-text">Muhammad Qasim Shahzad</span><br>
+                    <span class="text-lg md:text-xl font-bold text-gray-800">Head, Application Support Unit</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Professional Officer with over 12 years of extensive diversified work experience in multiple field & desk jobs. More than 3 years working as Head Application Support. Seeking a position to implement my skills and abilities in diversified ways for organization and self-development.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                        Get In Touch
+                    </a>
+                    <a href="#experience" class="border border-primary text-primary hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">
+                        View Experience
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <img src="https://raw.githubusercontent.com/muhammadqasimmsm/portfolio/5f5fc172e4ba7da51f9738af2d8cee0ab6b372e3/photo-1.jpg"
+                             alt="Muhammad Qasim Shahzad" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-white p-2 rounded-lg shadow-md">
+                        <div class="flex items-center bg-darker text-white px-3 py-1 rounded">
+                            <i class="fas fa-headset mr-2"></i>
+                            <span class="text-sm font-medium">IT Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Professional Summary) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">
+                <span class="gradient-text">Professional Summary</span>
+            </h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <div class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://raw.githubusercontent.com/muhammadqasimmsm/portfolio/5f5fc172e4ba7da51f9738af2d8cee0ab6b372e3/photo-1.jpg"
+                             alt="Muhammad Qasim Shahzad working" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">Experienced IT & Application Support Leader</h3>
+                    <p class="text-gray-600 mb-6">
+                        As a seasoned professional officer with over 12 years of extensive and diversified experience, I have a proven track record in IT application support, project management, and various operational roles. My career includes more than 3 years leading an Application Support Unit, where I focused on optimizing system performance, resolving complex technical issues, and enhancing overall user satisfaction. I am dedicated to applying my robust skill set in IT services, team leadership, and strategic problem-solving to contribute significantly to organizational growth and continuous self-development.
+                    </p>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold mb-3">Key Certifications</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Google I.T. Support Professional</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Microsoft I.T. Professional</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Artificial Intelligence</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Dell Certified System Expert</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">My Approach</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-3">
+                                    <i class="fas fa-cogs text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Proactive Support</h5>
+                                    <p class="text-gray-600 text-sm">Identify and resolve issues before they escalate</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-500 bg-opacity-10 p-2 rounded-full mr-3">
+                                    <i class="fas fa-users text-green-500"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Team Leadership</h5>
+                                    <p class="text-gray-600 text-sm">Guiding and coordinating teams for optimal results</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-purple-500 bg-opacity-10 p-2 rounded-full mr-3">
+                                    <i class="fas fa-chart-line text-purple-500"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Performance Monitoring</h5>
+                                    <p class="text-gray-600 text-sm">Ensuring application availability and health</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-yellow-500 bg-opacity-10 p-2 rounded-full mr-3">
+                                    <i class="fas fa-lightbulb text-yellow-500"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Problem Solving</h5>
+                                    <p class="text-gray-600 text-sm">Analytical approach to complex challenges</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                <span class="gradient-text">Work Experience</span>
+            </h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+                A detailed overview of my professional journey and contributions.
+            </p>
+            
+            <div class="space-y-12">
+                <!-- Experience 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">Head, Application Support Unit</h3>
+                            <p class="text-gray-600">ZTBL, Head Office, Islamabad</p>
+                        </div>
+                        <span class="text-gray-500 text-sm">June 2025 - PRESENT</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Provides 1st and 2nd level; Frontend & Backend Support for Inhouse Applications (CBAS & CDMS).</li>
+                        <li>Monitors the performance, availability, and health of banking applications to identify and resolve any issues promptly.</li>
+                        <li>Provides technical support to business users, guiding them through issue resolution.</li>
+                        <li>Escalates issues to concerned technical teams if not resolved by the unit.</li>
+                        <li>Carries out Configuration/Parameterization in Inhouse built applications of referential data.</li>
+                        <li>Assists incident manager to implement and own incident/problem management procedure.</li>
+                        <li>Manages capture, document, and maintain knowledge about incidents, problems, and solutions in a knowledge base.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">Unit Head, I.T. Support Unit</h3>
+                            <p class="text-gray-600">ZTBL, Regional Office (Sargodha, Islamabad, Jhang, Gujranwala & Sheikhupura)</p>
+                        </div>
+                        <span class="text-gray-500 text-sm">August 2022 - June 2025</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Provided 1st and 2nd level; Frontend & Backend Support for Inhouse Applications (CBAS & CDMS).</li>
+                        <li>Analyzed issues of EOD / batch processes / file ingestion etc. with expertise in identification & creation of RCA reports.</li>
+                        <li>Provided technical & operational application support.</li>
+                        <li>Created Excel Financial & reporting dashboards & presentational slides.</li>
+                        <li>Conducted User Training & Knowledgebase Generation on Official Applications & Security.</li>
+                        <li>Served as Team Leader / Units Coordinator providing support to users & in projects.</li>
+                        <li>Overseeing Hardware issues, Software issue resolution & Networking tasks.</li>
+                        <li>Managed Issue resolution with ITSM (HaloITSM), ticketing / incidents, Assets Management & Reporting.</li>
+                        <li>Supported feasibility studies & implementation of new I.T. policies across organization.</li>
+                        <li>Monitored and reported on IT system performance, identifying areas for improvement & implementing corrective actions.</li>
+                        <li>Performed Domain Joining, O.S. Upgrades, Antivirus Installations.</li>
+                        <li>Implemented Facial Attendance Systems, Managed Networks & Passive Cabling.</li>
+                        <li>Managed Asset Management & MCO Digital Tablets Issue Resolutions.</li>
+                        <li>Provided Day to Day I.T. Relevant User Support & Troubleshooting.</li>
+                        <li>Implemented P.L.R.A. f.k.a. LRMIS project.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">CAD REVIEWER</h3>
+                            <p class="text-gray-600">CAD HUB, ZTBL, Zonal Office, Sargodha</p>
+                        </div>
+                        <span class="text-gray-500 text-sm">January 2021 - August 2022</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Reviewed Loan Cases files for processing & issuance of SAC & DAC.</li>
+                        <li>Maintained Loan Case Files after DAC & previous files received from branches.</li>
+                        <li>Performed Record maintenance of Post DAC (Disbursement Documents) and reporting thereof.</li>
+                        <li>Achieved 8th Position Country Wide in processing of Loan Applications.</li>
+                        <li>Provided I.T. Support & Training of staff to Branch Users, Zonal Office & CAD Department.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">MOBILE CREDIT OFFICER</h3>
+                            <p class="text-gray-600">ZTBL, Sahiwal Town, Sargodha & Noorpur Thal</p>
+                        </div>
+                        <span class="text-gray-500 text-sm">April 2017 - January 2021</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Motivated, identified and carried out background checks of farmers/businessmen for Bank’s income generating activities.</li>
+                        <li>Determined credit needs, prepared feasibility reports and complete loan documents.</li>
+                        <li>Collected Cash Recoveries & other Business transactions outside Bank.</li>
+                        <li>Examined Title Documents like Agri Passbook with relevant record of Revenue Authorities viz-a-viz the actual position on the ground by conducting filed visits.</li>
+                        <li>Provided User training in Official I.T. Relevant tasks, generation of IT relevant statements for business & training of inhouse applications to other users as IT & Application Master Trainer & Skills builder.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">SERVICE CENTER OFFICIAL</h3>
+                            <p class="text-gray-600">Punjab Land Records Authority, A.R.C. Sahiwal (SGD)</p>
+                        </div>
+                        <span class="text-gray-500 text-sm">January 2013 - April 2017</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Joined PLRA from the root start of the project and put utmost efforts in grooming of the project until completion.</li>
+                        <li>Managed Database Backup & Restore, A.R.C. Reporting & Maintenance of IT equipment details.</li>
+                        <li>Upgraded IT applications, Installation & configuration of Assets & LRMIS Application.</li>
+                        <li>Collected & deposited fee challans.</li>
+                        <li>Issued more than 4-K Copies of Records of Rights amounting to Rs 1.089 M.</li>
+                        <li>Entered more than 5.7-K Mutations thus collecting Rs. 78.600 M of Government Fees.</li>
+                        <li>Maintained complete record of relevant issues of Land Records and their resolution.</li>
+                        <li>Maintained complete liaison with field functionaries regarding error handling and resolution of implementation of land records in LRMIS application.</li>
+                        <li>Collected and distributed fee and shares of staff and field functionaries and maintained complete records.</li>
+                        <li>Expertise in Urdu Typing with proficient speed.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                <span class="gradient-text">Educational Qualifications</span>
+            </h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+                My academic background providing a strong foundation for my professional career.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Education 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">Master in Computer Sciences</h3>
+                    <p class="text-gray-600">Virtual University Islamabad</p>
+                    <p class="text-gray-500 text-sm">Oct, 2017 - Oct, 2019</p>
+                    <p class="text-gray-700 mt-2">CGPA: 3.59</p>
+                </div>
+                
+                <!-- Education 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">Post Graduate Diploma in Computer Sciences</h3>
+                    <p class="text-gray-600">A.I.O.U. Islamabad</p>
+                    <p class="text-gray-500 text-sm">July, 2013 - July, 2014</p>
+                    <p class="text-gray-700 mt-2">Marks: 70.5%</p>
+                </div>
+                
+                <!-- Education 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">Bachelor in Commerce</h3>
+                    <p class="text-gray-600">A.I.O.U. Islamabad</p>
+                    <p class="text-gray-500 text-sm">Mar, 2010 - Aug, 2012</p>
+                    <p class="text-gray-700 mt-2">Marks: 64%</p>
+                </div>
+
+                <!-- Education 4 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">F. Sc. (Pre-Engineering)</h3>
+                    <p class="text-gray-600">B.I.S.E. Sargodha</p>
+                    <p class="text-gray-500 text-sm">Jun, 2006 - Jun, 2008</p>
+                    <p class="text-gray-700 mt-2">Marks: 73%</p>
+                </div>
+
+                <!-- Education 5 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2">Matriculation (Science Group)</h3>
+                    <p class="text-gray-600">B.I.S.E. Sargodha</p>
+                    <p class="text-gray-500 text-sm">Apr, 2004 - Apr, 2006</p>
+                    <p class="text-gray-700 mt-2">Marks: 84%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                <span class="gradient-text">Skills & Certifications</span>
+            </h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+                My diverse skill set and professional certifications.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Left Column - Technical Skills -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-code text-blue-600"></i>
+                        </div>
+                        Technical Skills
+                    </h3>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Microsoft Office Apps (Word, Excel, PowerPoint, Mail Merge, MS Projects, MS Access, MS Outlook)</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Adobe Photo Shop, Adobe Illustrator</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">CANVA Designing & Presentations</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Troubleshooting of Office & Windows applications</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Administrative Support</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Urdu Typing (Proficient Speed)</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Professional Skills & Certifications -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-users-cog text-purple-600"></i>
+                        </div>
+                        Professional Skills
+                    </h3>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Team Management Skills</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Problem Solving Skills</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Effective Communications</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Client Service Oriented</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Creative Thinking</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Analytical & Research Skills</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">IT Services & Supervisory Skills</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Open Minded Eager to Learn</span>
+                                <span class="text-gray-600"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-semibold mb-6 mt-10 flex items-center">
+                        <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-award text-green-600"></i>
+                        </div>
+                        Certifications & Diplomas
+                    </h3>
+                    
+                    <div class="space-y-3">
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Google I.T. Support Professional Certificate (Coursera.org)</li>
+                            <li>Microsoft I.T. Professional (TEVTA, G.T.T.I. Sargodha)</li>
+                            <li>Artificial Intelligence (A.I.O.U. Islamabad)</li>
+                            <li>Diploma in Office Management (6-Month) (First Flight Computer College)</li>
+                            <li>Dell Certified System Expert, Troubleshooting (Dell)</li>
+                            <li>Diplomas in: Graphic Designing, Creative Writing, Introduction to IoT, English Debating, Excel Dashboards, Presentation Designing, Infographics.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-darker text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                <span class="gradient-text">Get In Touch</span>
+            </h2>
+            <p class="text-center text-gray-300 mb-16 max-w-2xl mx-auto">
+                Interested in discussing a potential opportunity or need IT expertise? Reach out and I'll respond promptly.
+            </p>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-medium">Your Name</label>
+                            <input type="text" id="name" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium">Your Email</label>
+                            <input type="email" id="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5" placeholder="john@company.com" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-2 text-sm font-medium">Subject</label>
+                            <input type="text" id="subject" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5" placeholder="Let me know how I can help you" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 text-sm font-medium">Your Message</label>
+                            <textarea id="message" rows="6" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5" placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-800 p-8 rounded-xl h-full">
+                        <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Email</h4>
+                                    <p class="text-gray-300">
+                                      <a href="mailto:mqs.1000@outlook.com" class="underline hover:text-blue-400">
+                                        mqs.1000@outlook.com
+                                      </a>
+                                    <p class="text-gray-400 text-sm">Response time: within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-500 bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone text-green-500"></i>
+                                </div>
+                                <div>
+                                     <h4 class="font-medium mb-1">Phone</h4>
+                                     <p class="text-gray-300">
+                                        +92-313-7681000<br>
+                                        +92-334-7681000
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-red-500 bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-red-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Location</h4>
+                                    <p class="text-gray-300">Islamabad, Pakistan</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-gray-600 bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fab fa-linkedin-in text-gray-300"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">LinkedIn</h4>
+                                    <p class="text-gray-300">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-400">
+                                      https://www.linkedin.com/in/mqs1000/
+                                    </a>
+                                    <p class="text-gray-400 text-sm">Let's connect professionally</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-red-500 bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-file-pdf text-red-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Resume</h4>
+                                    <p class="text-gray-300">Download my professional resume</p>
+                                    <a href="Muhammad_Qasim_Shahzad_Resume.pdf" download class="text-primary text-sm font-medium mt-1 inline-block">Download PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h4 class="font-medium mb-4">Privacy Notice</h4>
+                            <div class="bg-gray-900 p-4 rounded-lg">
+                                <div class="flex items-start">
+                                    <i class="fas fa-shield-alt text-green-500 mt-1 mr-3"></i>
+                                    <p class="text-gray-300 text-sm">
+                                        This website uses HTTPS with strong encryption. All form submissions are encrypted 
+                                        in transit. I take your privacy seriously and will never share your information 
+                                        with third parties without your consent.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darker text-gray-400 py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl font-bold">
+                        <span class="gradient-text">Muhammad Qasim Shahzad</span>
+                    </div>
+                    <p class="text-sm mt-1">Head, Application Support Unit</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in text-lg"></i>
+                    </a>
+                    <a href="#" class="hover:text-white transition duration-300">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a href="#" class="hover:text-white transition duration-300">
+                        <i class="fab fa-twitter text-lg"></i>
+                    </a>
+                    <a href="#" class="hover:text-white transition duration-300">
+                        <i class="fab fa-medium text-lg"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm mb-4 md:mb-0">
+                    &copy; 2025 Muhammad Qasim Shahzad. All rights reserved.
+                </p>
+                
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition duration-300">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                mobileMenu.classList.remove('open');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Animate skill bars on scroll
+        const animateSkillBars = () => {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            const skillsSection = document.getElementById('skills');
+            const skillsPosition = skillsSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            
+            if (skillsPosition < screenPosition) {
+                skillBars.forEach(bar => {
+                    const width = bar.style.width;
+                    bar.style.width = '0';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 100);
+                });
+                
+                // Remove event listener after animation
+                window.removeEventListener('scroll', animateSkillBars);
+            }
+        };
+        
+        window.addEventListener('scroll', animateSkillBars);
+    </script>
+</body>
+</html>
